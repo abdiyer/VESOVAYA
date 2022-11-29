@@ -5,14 +5,19 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "devev": "concurrently \"electron .\" \"cd src && npm start\"",
-    "dev": "concurrently -k \"electron .\" \"cd src && npm run start\""
+    "electron-start": "electron .",
+    "devev": "concurrently -k \"electron .\" \"cd src && npm start\"",
+    "dev": "concurrently -k \"cross-env BROWSER=none npm start\"",
+    "electron-dev": "concurrently \"SET BROWSER=none&&cd src&&npm start\" \"wait-on http://localhost:3000 && npm run electron-start .\""
+    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
     "electron": "^21.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "wait-on": "^6.0.1"
   }
 }

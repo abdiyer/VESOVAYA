@@ -60,6 +60,8 @@ async function createMainWindow () {
     });
    
     await win.loadURL('http://localhost:3000');
+
+    win.webContents.openDevTools()
   
   //set up the express server into the same main.js file //
   const expApp = require("express");
@@ -72,13 +74,15 @@ async function createMainWindow () {
   
   expApp.listen(3000, () => {
     console.log("Server runing at Port: 3001");
-  })}
+  })
+
+}
 
   app.whenReady().then( () => {
 
     const mainMenu = Menu.buildFromTemplate(menu)
     Menu.setApplicationMenu(mainMenu)
 
-
+    
     createMainWindow()
 })
