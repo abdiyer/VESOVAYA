@@ -1,8 +1,8 @@
 import React from "react";
 import WatchVideo from '@mui/icons-material/Slideshow';
 import Reports from '@mui/icons-material/Summarize';
-import Settings from '@material-ui/icons/SettingsApplications';
-import Spravochnik from '@material-ui/icons/School';
+import Settings from '@mui/icons-material/Album';
+import Spravochnik from '@mui/icons-material/Airplay';
 
 
 export const SidebarData = [
