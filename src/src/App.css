@@ -11,7 +11,6 @@ html,body{
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: white;
 }
 
 .App{
@@ -22,8 +21,49 @@ body{
 .sidebar{
   width: 260px;
   flex-shrink: 0;
-  background-color: rgb(83, 119, 107);
+  background-color: #e3eaed;
   height: 100%;
   overflow: auto;
+}
+
+.sidebar-item{
+  padding: .75em 1em;
+  font-size: 1.2em;
+  display: block;
+}
+
+.sidebar-item:hover{
+  cursor: pointer;
+}
+
+.sidebar-title{
+  display: flex;
+}
+
+.icon{
+  padding-right: 8px;
+  color: #7c959d;
+}
+
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+  font-size: 0.8em;
+}
+.sidebar-content a{
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-item.open .sidebar-content{
+  height: auto;
+}
+
+.sidebar-item.open .sidebar-title{
+  color: #e6a057 !important;
+}
+.sidebar-item.open .icon{
+  color: #e6a057 !important;
 }
 
