@@ -25,6 +25,7 @@ import SidebarItem from './SidebarItem'
 import items from "../data/sidebar.json"
 import NewWeighing  from './NewWeighing'
 import logo from '../assets/logo-vesovaya.png'
+import { WeighList } from './WeighList'
 
 export default function Sidebar() {
   return (
@@ -36,6 +37,9 @@ export default function Sidebar() {
         <NewWeighing/>
       </div>
       {items.map((item,index) => <SidebarItem key={index} item={item} />)}
+      <div>
+        <WeighList/>
+      </div>
     </div>
   )
 }

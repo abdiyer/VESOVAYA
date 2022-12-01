@@ -59,7 +59,8 @@ function createMainWindow () {
       },
     });
    
-    win.loadFile('src/build/index.html');
+    //win.loadFile('src/build/index.html');
+    win.loadURL("http://localhost:3000/")
     //await win.loadFile(path.join(__dirname, './src/build/index.html'));
     
 

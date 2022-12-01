@@ -1,6 +1,6 @@
 {
   "name": "vesovaya",
-  "productName" : "vesovaya",
+  "productName": "vesovaya",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -12,22 +12,21 @@
     "dev": "concurrently -k \"cross-env BROWSER=none npm start\"",
     "electron-dev": "concurrently \"SET BROWSER=none&&cd src&&npm start\" \"wait-on http://localhost:3000 && npm run electron-start .\"",
     "build": "cd src && npm run build && cd .. && electron-builder"
-    
   },
   "build": {
-    "appId" : "vesovaya",
-    "win":{
-      "target":[
+    "appId": "vesovaya",
+    "win": {
+      "target": [
         "nsis"
       ],
-      "icon":"logo-vesovaya.ico"
+      "icon": "logo-vesovaya.ico"
     },
-    "nsis":{
-      "oneClick":false,
-      "installerIcon":"logo-vesovaya.ico",
-      "uninstallerIcon":"logo-vesovaya.ico",
-      "uninstallDisplayName":"vesovaya-uninstaller",
-      "license":"license.md",
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "logo-vesovaya.ico",
+      "uninstallerIcon": "logo-vesovaya.ico",
+      "uninstallDisplayName": "vesovaya-uninstaller",
+      "license": "license.md",
       "allowToChangeInstallationDirectory": true
     }
   },
@@ -36,6 +35,7 @@
   "dependencies": {
     "concurrently": "^7.6.0",
     "cross-env": "^7.0.3",
+    "electron": "^22.0.0",
     "express": "^4.18.2",
     "wait-on": "^6.0.1"
   }
