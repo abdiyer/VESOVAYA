@@ -23,11 +23,15 @@ import React from 'react'
 import "../App.css"
 import SidebarItem from './SidebarItem'
 import items from "../data/sidebar.json"
-import  NewWeighing  from './NewWeighing'
+import NewWeighing  from './NewWeighing'
+import logo from '../assets/logo-vesovaya.png'
 
 export default function Sidebar() {
   return (
     <div className='sidebar'>
+      <div className='img-div'>
+        <img src={logo} alt="" />
+      </div>
       <div>
         <NewWeighing/>
       </div>

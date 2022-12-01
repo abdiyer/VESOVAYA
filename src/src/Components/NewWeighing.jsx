@@ -1,18 +1,18 @@
-import { Button } from 'bootstrap'
-import {TbTruckLoading} from "react-icons/tb";
+
+import {FaTruckLoading} from "react-icons/fa";
 import React from 'react'
 
 
 function NewWeighing() {
   return (
-    <div>
+    <div className="weighing-button">
       {/* <Button>
             <TbTruckLoading/>
             <span>Новое взвешивание</span>
       </Button> */}
       <button>
-        <TbTruckLoading/>
-        <span>Новое взвешивание</span>
+        <FaTruckLoading/>
+        <span>   Новое взвешивание</span>
       </button>
     </div>
   )

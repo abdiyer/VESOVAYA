@@ -67,3 +67,37 @@ body{
   color: #e6a057 !important;
 }
 
+.weighing-button{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+.weighing-button button:hover{
+  cursor: pointer;
+}
+.weighing-button button{
+    border-radius: 30px;
+    border: 1px solid #3a7a90;
+    padding: 10px 20px;
+    background: #3a7a90;
+    font-size: 1.1em;
+    color:#e3eaed;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.img-div:hover{
+  cursor: pointer;
+}
+
+.img-div img {
+  min-width: 100%;
+  min-height: 100%
+}
+

@@ -6,7 +6,6 @@ function App() {
     <div className="App">
       <Sidebar/>
       <div className='container'>
-        Hello
       </div>
     </div>
   );
