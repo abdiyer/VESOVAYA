@@ -1,21 +1,22 @@
 import { useState } from "react"
 import "../App.css"
-import {BsFillPlayBtnFill} from "react-icons/bs";
-import {RiFileList3Fill} from "react-icons/ri";
-import {AiFillSetting} from "react-icons/ai";
-import {FaGraduationCap} from "react-icons/fa";
+import {ReactComponent as PlayButton} from "../assets/play-button.svg"
+import {ReactComponent as List} from "../assets/list.svg"
+import {ReactComponent as Settings} from "../assets/settings.svg"
+import {ReactComponent as Hat} from "../assets/hat.svg"
 
 
 
 
 export default function SidebarItem({item}){
     const [open, setOpen] = useState(false)
+    const [icoState, setIcoState]= useState("#7c969d")
     if(item.childrens){
         return(
             <div className={open ? "sidebar-item open" : "sidebar-item"}>
                 <div className="sidebar-title" onClick= { () => setOpen(!open) } >
                     <div className="icon">
-                        {item.icon == "video" ? <BsFillPlayBtnFill/> : item.icon == "reports" ? <RiFileList3Fill/> : item.icon == "settings" ? <AiFillSetting/> : item.icon == "list" ? <FaGraduationCap/> : ""}
+                        {item.icon == "video" ? <PlayButton fill="#7c969d"/> : item.icon == "reports" ? <List fill="#7c969d"/> : item.icon == "settings" ? <Settings fill="#7c969d"/> : item.icon == "list" ? <Hat fill="#7c969d"/> : ""}
                     </div>
                     <a href={item.path}>
                         <span>

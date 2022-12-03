@@ -53,6 +53,8 @@ function createMainWindow () {
       width: 1500,
       height: 900,
       autoHideMenuBar:true,
+      frame:false,
+      darkTheme:true,
       webPreferences: {
         //enableRemoteMode: true,
         nodeIntegration: true,
@@ -60,8 +62,8 @@ function createMainWindow () {
       },
     });
    
-    win.loadFile('src/build/index.html');
-    //win.loadURL("http://localhost:3000/")
+    //win.loadFile('src/build/index.html');
+    win.loadURL("http://localhost:3000/")
     //await win.loadFile(path.join(__dirname, './src/build/index.html'));
     
 

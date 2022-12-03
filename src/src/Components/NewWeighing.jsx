@@ -1,6 +1,7 @@
 
 import {FaTruck} from "react-icons/fa";
 import React from 'react'
+import {ReactComponent as Cart} from "../assets/cart.svg"
 
 
 function NewWeighing() {
@@ -11,7 +12,7 @@ function NewWeighing() {
             <span>Новое взвешивание</span>
       </Button> */}
       <button>
-        <FaTruck/>
+        <Cart />
         <span>   Новое взвешивание</span>
       </button>
     </div>
