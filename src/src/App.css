@@ -76,6 +76,11 @@ body{
   text-align: center;
   margin: 10px;
 }
+
+.weighing-button span{
+  margin-left: 3px;
+}
+
 .weighing-button button:hover{
   cursor: pointer;
 }
@@ -133,6 +138,10 @@ body{
 .two-icons span{
   margin: 3px;
 }
-.WeighList{
-  position: absolute;
+.spaces{
+  height: 200px;
 }
+/* .WeighList{
+  position: absolute;
+  bottom: 0px;
+} */

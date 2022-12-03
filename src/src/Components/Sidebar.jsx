@@ -37,6 +37,9 @@ export default function Sidebar() {
         <NewWeighing/>
       </div>
       {items.map((item,index) => <SidebarItem key={index} item={item} />)}
+      <div className="spaces">
+
+      </div>
       <div>
         <WeighList/>
       </div>

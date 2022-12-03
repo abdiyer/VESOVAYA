@@ -50,8 +50,9 @@ const menu = [
 
 function createMainWindow () {
     const win = new BrowserWindow({
-      width: 1000,
-      height: 800,
+      width: 1500,
+      height: 900,
+      autoHideMenuBar:true,
       webPreferences: {
         //enableRemoteMode: true,
         nodeIntegration: true,
@@ -59,8 +60,8 @@ function createMainWindow () {
       },
     });
    
-    //win.loadFile('src/build/index.html');
-    win.loadURL("http://localhost:3000/")
+    win.loadFile('src/build/index.html');
+    //win.loadURL("http://localhost:3000/")
     //await win.loadFile(path.join(__dirname, './src/build/index.html'));
     
 
@@ -83,8 +84,11 @@ function createMainWindow () {
 
   app.whenReady().then( () => {
 
-    const mainMenu = Menu.buildFromTemplate(menu)
-    Menu.setApplicationMenu(mainMenu)
+    // const mainMenu = Menu.buildFromTemplate(menu)
+    // Menu.setApplicationMenu(mainMenu)
+
+    
+    
 
     
     createMainWindow()

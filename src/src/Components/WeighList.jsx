@@ -7,7 +7,7 @@ import {BsInfoCircleFill} from "react-icons/bs";
 
 export const WeighList = () => {
   return (
-    <div>
+    <div className='WeighList'>
         <div className="WeighItem">
             <p><span className='WeighDot'><BsDot/></span>Весы 1</p>
             <div className="WeighItemData">

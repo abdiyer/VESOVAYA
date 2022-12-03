@@ -1,5 +1,5 @@
 
-import {FaTruckLoading} from "react-icons/fa";
+import {FaTruck} from "react-icons/fa";
 import React from 'react'
 
 
@@ -11,7 +11,7 @@ function NewWeighing() {
             <span>Новое взвешивание</span>
       </Button> */}
       <button>
-        <FaTruckLoading/>
+        <FaTruck/>
         <span>   Новое взвешивание</span>
       </button>
     </div>
